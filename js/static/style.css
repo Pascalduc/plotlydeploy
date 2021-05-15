@@ -1,0 +1,12 @@
+body {
+
+    color: hsl(229, 92%, 20%);
+  }
+
+  /* add background-position: center; and 400% for no vertical compression*/
+.jumbotron {
+    background-image: url("images/bacteria.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);;
+    }
