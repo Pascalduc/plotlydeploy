@@ -133,7 +133,7 @@ function buildCharts(sample) {
       title: '<b>Bacteria Cultures Per Samples</b>', font: { size: 12, color: "darkblue"  },
       xaxis: {title: 'OTU ID'},
       margin: {
-        t: 40,
+        t: 60,
         b: 80,
         l: 40,
         r: 40},
@@ -190,8 +190,8 @@ function buildCharts(sample) {
       margin: { 
         b: 0,
         t: 0,
-        l: 0,
-        r: 0 },
+        l: 30,
+        r: 40 },
       font: { color: "darkblue" }
      
     };
