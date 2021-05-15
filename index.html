@@ -16,23 +16,40 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <h1><b>Belly Button Biodiversity Dashboard</b></h1>
+        <p><b>Use the interactive charts below to explore the dataset</b></p>
       </div>
+      <div><br></br>
+
+    <div class='row'>
+      <div class='col-md-12 text - text-justify'>
+        <p style='font-size: large;'>
+          Welcome to our belly button biodiversity page. 
+          Improbable Beef is in search of bacteria candidate to produce synthetic meat and had volunteer swabbing their belly button for science. 
+          Here, you will find information about the bacterial flora colonizing the navel of each donor. Use the dropdown menu to select a subject ID and the demographic information will be displayed for each volunteer. 
+          The Top 10 bacterial species will be displayed on the bar graph while the whole flora can be visualized on the bubble chart. Both charts are interactive with scientific names appearing when hoovering the cursor over the data. 
+          The gauge chart shows the belly button washing frequency for the selected IDs. 
+          Enjoy exploring the world of bacteria.
+        </p>
+        <br></br>   
+        </div>  
+  
+      </div>
+    </div>
     </div>
     <div class="row">
       <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
+        <div class="well text-center">
+          <h4>Test Subject ID No.:</h4>
           <!-- creates the dropdown menu and send this.value to JS function optionChanged-->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+            <h3 class="panel-title" style='font-size: large;'>Demographic Info</h3>
           </div>
           <!-- demographic information -->
-          <div id="sample-metadata" class="panel-body"></div>
+          <div id="sample-metadata" class="panel-body" style='font-size: x-large'></div>
         </div>
       </div>
       <div class="col-md-5">
@@ -42,11 +59,13 @@
         <div id="gauge"></div>
       </div>
     </div>
+    <div><br></br></div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
       </div>
     </div>
+    <div><br></br></div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>

@@ -49,7 +49,7 @@ function buildMetadata(sample) {
     // Hint: Inside the loop, you will need to use d3 to append new
     // tags for each key-value in the metadata.
     Object.entries(result).forEach(([key, value]) => {
-      PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
+      PANEL.append("h5").text(`${key.toUpperCase()}: ${value}`);
     });
 
   });
@@ -103,7 +103,8 @@ function buildCharts(sample) {
     // 9. Create the layout for the bar chart. 
     var barLayout = {
       title: "<b>Top 10 Bacteria Cultures Found</b>", 
-      font: { size: 12, color: "darkblue" }
+      font: { size: 12, color: "darkblue" },
+
     };
 
 
